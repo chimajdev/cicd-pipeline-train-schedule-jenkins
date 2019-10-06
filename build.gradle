@@ -38,7 +38,7 @@ task zip(type: Zip) {
 }
 
 //declare task dependencies
-build.dependsOn sonarqube
+build.dependsOn zip
 zip.dependsOn sonarqube
 zip.dependsOn npm_build
 npm_build.dependsOn npm_test
